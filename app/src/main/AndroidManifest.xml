@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wallpaperapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+
+    <application
+        android:name=".MyPefrence"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Collection.CollectionActivity"></activity>
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+
+            </intent-filter>
+        </activity>
+        <activity android:name=".MaiMixActivity.CarVPActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MaiMixActivity.FunnyVPActivity" />
+        <activity android:name=".MaiMixActivity.AnimalVPActivity" />
+        <activity android:name=".MaiMixActivity.BirthdayVPActivity" />
+        <activity android:name=".MaiMixActivity.FestivalVPActivity" />
+        <activity android:name=".MaiMixActivity.SeaVPActivity" />
+        <activity android:name=".MaiMixActivity.SpaceVPActivity" />
+        <activity android:name=".MaiMixActivity.SportVPActivity" />
+        <activity android:name=".ViewpagerV.ViewPagerVActivity" />
+        <activity android:name=".ViewpagerH.ViewPagerActivityH" />
+        <activity android:name=".MaiMixActivity.FoodVPActivity" />
+        <activity android:name=".MaiMixActivity.ArchitectureVPActivity" />
+        <activity android:name=".MaiMixActivity.WaterColourVPActivity" />
+        <activity android:name=".MaiMixActivity.FlowersVPActivity" />
+        <activity android:name=".MaiMixActivity.WeddingVPActivity" />
+        <activity android:name=".MaiMixActivity.LoveVPActivity" />
+        <activity android:name=".MaiMixActivity.BabyVPActivity" />
+        <activity android:name=".ViewpagerS.ViewPagerActivityS" />
+        <activity android:name=".SingActivity" />
+
+
+        <receiver
+            android:name=".MyRecever"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+
+        </receiver>
+    </application>
+
+</manifest>

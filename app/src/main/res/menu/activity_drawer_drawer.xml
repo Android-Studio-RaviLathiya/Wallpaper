@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/dcategory"
+            android:title="Category" />
+        <item
+            android:id="@+id/fav"
+            android:icon="@drawable/dfavorite"
+            android:title="Favourite" />
+        <item
+            android:id="@+id/acc"
+            android:icon="@drawable/daccount"
+            android:title="Account" />
+    </group>
+
+    <item android:title="Communicate">
+
+        <menu>
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/dshare"
+            android:title="Share Application" />
+        <item
+            android:id="@+id/Rate"
+            android:icon="@drawable/drate"
+            android:title="Rate Application" />
+  <item
+            android:id="@+id/moreapp"
+            android:icon="@drawable/dmoreapp"
+            android:title="More Application" />
+
+        </menu>
+
+    </item>
+
+</menu>
